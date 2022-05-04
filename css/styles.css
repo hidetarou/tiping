@@ -1,0 +1,22 @@
+h1, #target, #result {
+  user-select: none;
+}
+body {
+  padding-top: 40px;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  background-color:skyblue;
+}
+h1{
+color: red;
+}
+
+#target {
+  font-size: 48px;
+  letter-spacing: .1em;
+  cursor: pointer;
+}
+
+#result, #replay {
+  font-size: 36px;
+}
