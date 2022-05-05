@@ -16,9 +16,9 @@
     'skyblue',
     'navy',
     'gold',
-    'silver',
-    
-  ]
+    'silver', 
+  ];
+  
   let word;
   let loc = 0;
   let wog = 0;
@@ -27,7 +27,7 @@
 
  function setWord() {
   
-  word = words[Math.floor(Math.random() * words.length)];
+  word = words.splice(Math.floor(Math.random() * words.length), 1)[0];
   target.textContent = word;
  }
 
@@ -57,9 +57,6 @@
         const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(2);
         const result = document.getElementById('result');
         result.textContent = `Finished! ${elapsedTime} seconds ${wog}mistipes`;
-        isPlaying = false;
-        const replay = document.getElementById('replay');
-        replay.textContent = 'replay';
         
       }
 
